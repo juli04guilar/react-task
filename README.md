@@ -18,3 +18,8 @@
 # Develop ui components using storybook
 
 - run `yarn storybook` to see the ui components
+
+# Screenshots 
+![add task](/src/screenshots/new-task.png)
+![move task](/src/screenshots/moving-task.png)
+![storybook](/src/screenshots/storybook.png)
