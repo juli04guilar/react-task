@@ -1,0 +1,14 @@
+.task-page {
+  width: 100%;
+}
+.task-page-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.task-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*# sourceMappingURL=TaskPage.css.map */

@@ -1,0 +1,13 @@
+.task {
+  color: #999;
+  padding: 0.5rem;
+}
+.task-header {
+  color: #5b83ad;
+  border-left: 5px solid #5b83ad;
+  padding-left: 0.3rem;
+}
+.select-task-status {
+  padding: 0.6rem;
+}
+/*# sourceMappingURL=Task.css.map */

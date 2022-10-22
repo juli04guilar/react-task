@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import TaskPage from "./pages/TaskPage";
+import { connect } from "react-redux";
+import { addTask, updateTaskStatus } from "./actions";
 
-function App() {
+function App(props) {
+  const onCreateTask = (task) => {
+    props.dispatch(addTask(task));
+  };
+  const onUpdateTaskStatus = ({ taskId, newStatus }) => {
+    props.dispatch(updateTaskStatus({ taskId, newStatus }));
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Task Page</h1>
+      <TaskPage
+        onUpdateTaskStatus={onUpdateTaskStatus}
+        onCreateTask={onCreateTask}
+        tasks={props.tasks}
+      />
     </div>
   );
 }
+function mapStateToProps(state) {
+  return {
+    tasks: state.tasks,
+  };
+}
 
-export default App;
+export default connect(mapStateToProps)(App);

@@ -1,0 +1,7 @@
+.new-form-task {
+  display: flex;
+  flex-direction: column;
+}
+.new-form-task input {
+  display: block;
+}

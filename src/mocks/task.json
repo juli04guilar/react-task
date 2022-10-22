@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "id": "03468722-a6e4-49c1",
+      "title": "Create React App",
+      "description": " Run npx create-react-app my-app ",
+      "status": "Completed"
+    },
+    {
+      "id": "05468722-a6e4-49c2",
+      "title": "Add Redux to App",
+      "description": "Setup Redux to app",
+      "status": "In Progress"
+    }
+  ]
+}
